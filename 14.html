@@ -1,0 +1,28 @@
+<html>
+     <head>
+	       <title>Form Object</title>
+	 </head>
+	      <script language="javascript">
+		  function viewInfo()
+		  {
+		  var form1=document.info;
+		  n=form1.length;
+		  msg="";
+		  for(i=0;i<n-1;i++)
+		  {
+		   msg +=form1.elements[i].name+" = " +form1.elements[i].value+"\n";
+		   }
+		   alert(msg);
+		   }
+		  </script>
+	 <body>
+	       <h3>SIGN IN FORM</h3>
+		   <form name="info">
+		   NAME: <input type="text" name="Name"> <br>
+		   City: <input type="text" name="City"> <br>
+		   Phone No.:<input type="text" name="Phone No."><br>
+		   Email: <input type="text" name="Email ID"><br><br>
+		   <input type="button" name="Submit" Value="submit" onClick="viewInfo();">
+		   <form>
+	 </body>
+</html>

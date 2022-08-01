@@ -1,0 +1,37 @@
+<html>
+      <head>
+	  <title> Confirm Dialogue Box </title>
+	  </head>
+	  <body>
+	         <SCRIPT LANGUAGE="javascript">
+			       var num,a, b, c, i, ans=1;
+				   while(ans==1)
+				   {
+				        num=prompt("Enter the number of  terms","");
+                        a=0;
+                        b=1;
+                        document.write("Generating  Fibonacci series for "+num+" terms<br>");
+                        if(num==1)
+                        {
+                                document.write(a+"<br>");
+                        }
+                        else if (num==2)
+                        {
+                                document.write(a+"<br>"+b+"<br>");
+                        }
+                        else
+                        {
+                                document.write(a+"<br>"+b+"<br>");
+                                for(i=3;i<=num;i++)
+                                {
+                                    c=a+b;
+                                    a=b;
+                                    b=c;
+                                    document.write(c+"<br>");
+                                }
+                        }
+                        ans=confirm("Do u want to generate fibonacci series again?");
+                    }
+			   </SCRIPT>
+			</body> 
+</html>			
